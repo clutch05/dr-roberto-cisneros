@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<!-- Sitio de muestra: que Google no lo indexe. Se quita cuando sea su sitio oficial. -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Dr. Roberto Cisneros Chávez · Urólogo en CDMX">
+<meta property="og:description" content="Piedras en el riñón, próstata y cirugía de mínima invasión. 5 estrellas en 415 opiniones verificadas.">
+<meta property="og:image" content="https://clutch05.github.io/dr-roberto-cisneros/img/dr-cisneros.jpg">
+<meta property="og:type" content="website">
+<title>Urólogo en CDMX · Dr. Roberto Cisneros Chávez</title>
+<meta name="description" content="Urólogo en la Ciudad de México. Piedras en el riñón, próstata, vasectomía y cirugía de mínima invasión. 5 estrellas en 415 opiniones verificadas. Consulta en Hospital Ángeles Metropolitano, Pedregal y Del Valle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Physician","name":"Dr. Roberto Cisneros Chávez","medicalSpecialty":"Urologic","telephone":"+52 55 2580 7262","priceRange":"$1,200 - $1,400",
+ "aggregateRating":{"@type":"AggregateRating","ratingValue":5,"reviewCount":415},
+ "address":[
+  {"@type":"PostalAddress","name":"Hospital Ángeles Metropolitano","streetAddress":"Tlacotalpan 59","addressLocality":"Roma Sur, Cuauhtémoc","postalCode":"06760","addressRegion":"CDMX","addressCountry":"MX"},
+  {"@type":"PostalAddress","name":"Pedregal Torre Médica, piso 7, consultorio 794","streetAddress":"Camino a Santa Teresa 1055","addressLocality":"Héroes de Padierna, Magdalena Contreras","postalCode":"10700","addressRegion":"CDMX","addressCountry":"MX"},
+  {"@type":"PostalAddress","name":"Hospital Polar San José","streetAddress":"Gabriel Mancera 1802","addressLocality":"Del Valle Centro, Benito Juárez","postalCode":"03104","addressRegion":"CDMX","addressCountry":"MX"}],
+ "sameAs":["https://www.doctoralia.com.mx/roberto-cisneros-chavez/urologo/cuauhtemoc2","https://www.instagram.com/drrobertocisneros/"]}
+</script>
+<style>
+  /* Sistema: una letra (Geist), un acento (turquesa del logo), un radio (12px), sin bordes en tarjetas. */
+  :root{
+    --bg:#ffffff; --tint:#F2F4F8; --line:#E3E7EF; --line-tint:#DADFE9;
+    --ink:#0B1433; --muted:#5A6480;
+    --navy:#062382; --navy-hover:#04195F; --band:#0A1A52;
+    --teal:#007499; --teal-soft:#8FD6EA;
+    --wall:#D3D5CF; --star:#F2B21B;
+    --r:12px; --maxw:1160px;
+    --font:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+  body{font-family:var(--font);color:var(--ink);background:var(--bg);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-weight:600;letter-spacing:-.03em;line-height:1.08;text-wrap:balance}
+  h2{font-size:clamp(1.75rem,1.4vw + 1.2rem,2.45rem)}
+  h1 b,h2 b{font-weight:inherit;color:var(--teal)}
+  .wrap{max-width:calc(var(--maxw) + 40px);margin:0 auto;padding:0 20px}
+  .sub{color:var(--muted);max-width:58ch;margin-top:12px}
+  section{padding:64px 0 56px}
+  .tint{background:var(--tint)}
+  :focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:6px}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 22px;border-radius:var(--r);font:600 16px/1 var(--font);letter-spacing:-.01em;white-space:nowrap;cursor:pointer;border:0;transition:background .2s ease,box-shadow .2s ease,transform .15s ease}
+  .btn:active{transform:translateY(1px)}
+  .btn i{font-size:21px}
+  .btn-primary{background:var(--navy);color:#fff}
+  .btn-primary:hover{background:var(--navy-hover)}
+  .btn-ghost{background:#fff;color:var(--navy);box-shadow:inset 0 0 0 1.5px #C7CFE2}
+  .btn-ghost:hover{box-shadow:inset 0 0 0 1.5px var(--navy)}
+  .btn-white{background:#fff;color:var(--navy)}
+  .btn-white:hover{background:#E9EEFB}
+  .btn-on-dark{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.45)}
+  .btn-on-dark:hover{box-shadow:inset 0 0 0 1.5px #fff}
+
+  /* Encabezado */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:28px;height:68px}
+  .nav .logo img{height:38px;width:auto}
+  .nav-links{display:flex;gap:26px;margin-left:8px}
+  .nav-links a{font-size:15px;font-weight:500;color:var(--muted);transition:color .2s}
+  .nav-links a:hover{color:var(--ink)}
+  .nav .spacer{flex:1}
+  .nav .tel{display:inline-flex;align-items:center;gap:6px;font-size:15px;font-weight:600;color:var(--navy)}
+  .nav .tel i{font-size:18px}
+  .nav .btn{height:44px;padding:0 18px;font-size:15px}
+  .nav .btn i{font-size:19px}
+
+  /* Hero: texto a la izquierda, foto a sangre a la derecha */
+  .hero-grid{display:grid;grid-template-columns:minmax(20px,1fr) minmax(0,640px) minmax(0,520px) minmax(20px,1fr);min-height:600px}
+  .hero-copy{grid-column:2;align-self:center;padding:48px 48px 52px 0}
+  .hero-kicker{font-size:15px;font-weight:500;color:var(--teal)}
+  .hero h1{font-size:clamp(2.15rem,1.45vw + 1.6rem,3.05rem);margin-top:14px;max-width:15ch}
+  .hero .sub{font-size:18px;margin-top:18px;max-width:44ch}
+  .hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .hero-photo{grid-column:3 / 5;position:relative;overflow:hidden;background:var(--wall);border-bottom-left-radius:var(--r)}
+  .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 24%}
+
+  /* Franja de prueba */
+  .proof .wrap{display:grid;grid-template-columns:1.35fr 1fr 1fr 1fr;gap:28px;align-items:center;padding-top:26px;padding-bottom:26px}
+  .pf b{display:block;font-size:24px;font-weight:600;letter-spacing:-.025em;line-height:1.15}
+  .pf span{display:block;color:var(--muted);font-size:14px;margin-top:3px}
+  .pf-rating{display:flex;align-items:center;gap:14px}
+  .pf-rating img{height:22px;width:auto}
+  .pf-rating .stars{font-size:15px}
+  .stars{color:var(--star);display:inline-flex;gap:1px;vertical-align:-2px}
+
+  /* Padecimientos */
+  .cond{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:56px}
+  .cond-head{position:sticky;top:104px;align-self:start}
+  .cond-group{border-top:1px solid var(--line);padding:22px 0 26px}
+  .cond-group h3{font-size:15px;font-weight:600;letter-spacing:-.005em;color:var(--teal);margin-bottom:16px}
+  .cond-items{display:grid;grid-template-columns:1fr 1fr;gap:20px 36px}
+  .cond-item b{display:block;font-size:17.5px;font-weight:600;letter-spacing:-.015em;margin-bottom:4px}
+  .cond-item b span{font-weight:600;color:var(--navy);margin-left:6px;font-size:15px}
+  .cond-item p{font-size:15px;color:var(--muted);line-height:1.55}
+
+  /* El doctor */
+  .doc .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:60px;align-items:center}
+  .doc-photo{border-radius:var(--r);overflow:hidden;aspect-ratio:5/4}
+  .doc-photo img{width:100%;height:100%;object-fit:cover}
+  .quote{font-size:20px;line-height:1.45;font-weight:500;letter-spacing:-.01em;margin-top:22px;max-width:40ch}
+  .quote-by{font-size:14px;color:var(--muted);margin-top:8px}
+  .creds{display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line-tint)}
+  .creds dt{font-size:13px;color:var(--muted)}
+  .creds dd{font-size:15.5px;font-weight:500;margin-top:2px}
+  .creds .full{grid-column:1 / -1}
+
+  /* Primera consulta y precios */
+  .visit .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:start}
+  .steps{list-style:none;padding:0;margin-top:30px;display:grid;gap:24px;counter-reset:s}
+  .steps li{display:grid;grid-template-columns:36px 1fr;gap:16px;position:relative}
+  .steps li::before{counter-increment:s;content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:600;font-size:15px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:17.5px;top:44px;bottom:-20px;width:1px;background:var(--line)}
+  .steps b{display:block;font-size:17.5px;font-weight:600;letter-spacing:-.015em;padding-top:5px}
+  .steps p{color:var(--muted);font-size:15px;margin-top:3px}
+  .prices{background:var(--tint);border-radius:var(--r);padding:28px 28px 26px}
+  .prices h3{font-size:19px;letter-spacing:-.02em}
+  .price-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:13px 0;border-bottom:1px solid var(--line-tint);font-size:15.5px}
+  .price-row b{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .ins-title{font-size:15.5px;font-weight:600;margin-top:22px}
+  .ins-logos{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:14px}
+  .ins-logos img{width:auto}
+  .ins-note{font-size:14px;color:var(--muted);margin-top:12px}
+
+  /* Opiniones: banda azul */
+  .reviews{background:var(--band);color:#fff}
+  .reviews .wrap{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:56px;align-items:start}
+  .reviews h2{color:#fff}
+  .reviews h2 b{color:var(--teal-soft)}
+  .score{margin-top:26px}
+  .score .num{font-size:76px;font-weight:600;letter-spacing:-.045em;line-height:.95}
+  .score .stars{font-size:20px;margin-top:10px}
+  .score p{color:#C9D2EE;font-size:15px;margin-top:10px;max-width:34ch}
+  .score .dl{height:20px;width:auto;filter:brightness(0) invert(1);opacity:.92;margin-top:18px}
+  .score .btn{margin-top:22px;height:46px;font-size:15px}
+  .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .rev{background:rgba(255,255,255,.065);border-radius:var(--r);padding:20px 20px 18px;display:flex;flex-direction:column;gap:12px}
+  .rev .stars{font-size:14px}
+  .rev p{font-size:15.5px;line-height:1.55;color:#EEF2FF;flex:1}
+  .rev footer{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;color:#AEB9DD}
+  .rev footer b{color:#fff;font-weight:600}
+  .rev .verif{color:var(--teal-soft);font-weight:500;display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+
+  /* Galería */
+  .gallery{display:grid;grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:232px 232px;gap:12px;margin-top:30px}
+  .gallery img{width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
+  .gallery .g1{grid-row:1 / 3}
+  .gallery .g4{grid-column:2 / 4}
+
+  /* Consultorios */
+  .locs{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px;margin-top:30px}
+  .loc-list{display:grid;gap:8px;align-content:start}
+  .loc{border-radius:var(--r);padding:18px 20px;transition:background .2s}
+  .loc.is-active{background:#fff}
+  .loc-pick{all:unset;display:block;width:100%;cursor:pointer}
+  .loc-pick b{display:block;font-size:17.5px;font-weight:600;letter-spacing:-.015em}
+  .loc-pick span{display:block;font-size:14.5px;color:var(--muted);margin-top:4px}
+  .loc-pick small{display:block;font-size:13px;color:var(--muted);margin-top:6px}
+  .loc a{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:14px;font-weight:600;color:var(--navy)}
+  .loc a i{font-size:16px}
+  .map{border-radius:var(--r);overflow:hidden;background:#DCE2EE;min-height:400px}
+  .map iframe{width:100%;height:100%;min-height:400px;border:0;display:block}
+
+  /* Preguntas */
+  .faq-list{max-width:820px;margin-top:22px}
+  .faq-list details{border-bottom:1px solid var(--line);padding:18px 0}
+  .faq-list summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:17px;font-weight:600;letter-spacing:-.01em}
+  .faq-list summary::-webkit-details-marker{display:none}
+  .faq-list summary i{font-size:20px;color:var(--teal);transition:transform .2s ease;flex:none}
+  .faq-list details[open] summary i{transform:rotate(45deg)}
+  .faq-list details p{color:var(--muted);margin-top:10px;max-width:70ch}
+
+  /* Cierre */
+  .final{background:var(--band);color:#fff;padding:56px 0}
+  .final .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+  .final h2{color:#fff}
+  .final h2 b{color:var(--teal-soft)}
+  .final p{color:#C9D2EE;margin-top:10px;max-width:50ch}
+  .final .cta{display:flex;flex-wrap:wrap;gap:12px}
+
+  footer.site{padding:44px 0 32px;font-size:14.5px;color:var(--muted)}
+  .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+  .foot img{height:34px;width:auto;margin-bottom:12px}
+  .foot b{display:block;color:var(--ink);font-weight:600;margin-bottom:8px}
+  .foot a:hover{color:var(--ink)}
+  .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:32px;padding-top:20px;border-top:1px solid var(--line);font-size:13px}
+
+  .mbar{display:none}
+
+  @media (max-width:1100px){ .nav .tel{display:none} }
+  @media (max-width:899px){
+    body{font-size:16px}
+    section{padding:40px 0}
+    .nav{height:60px;justify-content:center}
+    .nav-links,.nav .spacer,.nav .btn{display:none}
+    .nav .logo img{height:32px}
+    .hero-grid{grid-template-columns:20px 1fr 20px;min-height:0}
+    .hero-photo{grid-column:1 / 4;grid-row:1;height:330px;border-radius:0}
+    .hero-photo img{object-position:50% 18%}
+    .hero-copy{grid-column:2;grid-row:2;padding:24px 0 32px}
+    .hero .sub{font-size:16.5px;margin-top:14px}
+    .hero .cta{margin-top:22px}
+    .hero .cta .btn{flex:1 1 auto}
+    .proof .wrap{grid-template-columns:1fr 1fr;gap:20px 16px;padding-top:22px;padding-bottom:22px}
+    .pf-rating{grid-column:1 / -1}
+    .pf b{font-size:21px}
+    .cond,.doc .wrap,.visit .wrap,.reviews .wrap,.locs{grid-template-columns:1fr;gap:28px}
+    .cond-head{position:static}
+    .cond-items{grid-template-columns:1fr;gap:16px}
+    .doc-photo{aspect-ratio:4/3}
+    .creds{grid-template-columns:1fr;gap:14px}
+    .rev-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -20px;padding:0 20px 8px;scrollbar-width:none}
+    .rev-grid::-webkit-scrollbar{display:none}
+    .rev{flex:0 0 84%;scroll-snap-align:start}
+    .score .num{font-size:64px}
+    .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:24px -20px 0;padding:0 20px 4px;scrollbar-width:none}
+    .gallery::-webkit-scrollbar{display:none}
+    .gallery img{flex:0 0 78%;height:250px;scroll-snap-align:start}
+    .map,.map iframe{min-height:280px}
+    .final{padding:44px 0}
+    .final .cta,.final .cta .btn{width:100%}
+    .foot{grid-template-columns:1fr;gap:22px}
+    footer.site{padding-bottom:110px}
+    .mbar{display:grid;grid-template-columns:auto 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;transform:translateY(110%);transition:transform .25s ease;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 -1px 0 var(--line)}
+    .mbar .btn{height:50px;padding:0 18px}
+    .show-bar .mbar{transform:none}
+  }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *{transition:none!important} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#" aria-label="Inicio"><img src="img/logo.png" alt="Dr. Roberto Cisneros Chávez, médico cirujano urólogo"></a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#padecimientos">Padecimientos</a>
+      <a href="#doctor">El doctor</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#consultorios">Consultorios</a>
+    </nav>
+    <div class="spacer"></div>
+    <a class="tel" href="tel:+525525807262"><i class="ph ph-phone" aria-hidden="true"></i>55 2580 7262</a>
+    <a class="btn btn-primary" href="https://wa.me/525525807262?text=Hola%20doctor,%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i>Agendar por WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="hero-kicker">Urólogo en Roma Sur, Pedregal y Del Valle</p>
+      <h1>Tu salud urológica, sin pena y con un <b>especialista</b></h1>
+      <p class="sub">Dr. Roberto Cisneros Chávez. Piedras en el riñón, próstata y cirugía de mínima invasión, explicado sin tecnicismos.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://wa.me/525525807262?text=Hola%20doctor,%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i>Agendar por WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+525525807262"><i class="ph ph-phone" aria-hidden="true"></i>Llamar</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/dr-cisneros.jpg" alt="Dr. Roberto Cisneros Chávez, urólogo en la Ciudad de México" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<div class="proof tint">
+  <div class="wrap">
+    <a class="pf pf-rating" href="https://www.doctoralia.com.mx/roberto-cisneros-chavez/urologo/cuauhtemoc2" target="_blank" rel="noopener">
+      <img src="img/doctoralia-logo.svg" alt="Doctoralia">
+      <div><b>5.0 <span class="stars" aria-label="5 de 5 estrellas"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span></b><span>415 opiniones verificadas</span></div>
+    </a>
+    <div class="pf"><b>+12 años</b><span>como urólogo</span></div>
+    <div class="pf"><b>3 hospitales</b><span>en la Ciudad de México</span></div>
+    <div class="pf"><b>16 aseguradoras</b><span>GNP, AXA, MetLife y más</span></div>
+  </div>
+</div>
+
+<section id="padecimientos">
+  <div class="wrap cond">
+    <div class="cond-head">
+      <h2>Lo que atiende, de la consulta a la <b>cirugía</b></h2>
+      <p class="sub">Cirugía de mínima invasión cuando se necesita: menos dolor y menos días en el hospital.</p>
+    </div>
+    <div>
+      <div class="cond-group">
+        <h3>Riñón y vías urinarias</h3>
+        <div class="cond-items">
+          <div class="cond-item"><b>Piedras en el riñón</b><p>Dolor fuerte en la espalda baja o sangre en la orina. Tratamiento por endourología, sin cortes grandes.</p></div>
+          <div class="cond-item"><b>Infecciones urinarias</b><p>Ardor o ganas de orinar a cada rato. Diagnóstico y tratamiento a tiempo.</p></div>
+          <div class="cond-item"><b>Uroflujometría con EMG <span>$600 MXN</span></b><p>Estudio en consultorio que mide cómo orinas para elegir el tratamiento correcto.</p></div>
+        </div>
+      </div>
+      <div class="cond-group">
+        <h3>Próstata</h3>
+        <div class="cond-items">
+          <div class="cond-item"><b>Crecimiento de próstata</b><p>Te levantas de noche a orinar o el chorro es débil. Prostatectomía transuretral cuando hace falta.</p></div>
+          <div class="cond-item"><b>Cáncer de próstata</b><p>Revisión, diagnóstico y prostatectomía radical laparoscópica.</p></div>
+        </div>
+      </div>
+      <div class="cond-group">
+        <h3>Salud masculina y cirugía</h3>
+        <div class="cond-items">
+          <div class="cond-item"><b>Vasectomía</b><p>Procedimiento rápido, explicado con calma y sin pena.</p></div>
+          <div class="cond-item"><b>Molestias en los testículos</b><p>Inflamación, ardor o una bolita. Balanitis y espermatocele.</p></div>
+          <div class="cond-item"><b>Cáncer de riñón, vejiga y testículo</b><p>Nefrectomía y cirugía oncológica por laparoscopia.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="doc tint" id="doctor">
+  <div class="wrap">
+    <div class="doc-photo"><img src="img/consultorio-escritorio.jpg" alt="Consultorio del Dr. Roberto Cisneros Chávez"></div>
+    <div>
+      <h2>Entiendes qué tienes, qué opciones hay y <b>cuánto cuesta</b></h2>
+      <p class="quote">«Especialista en problemas de vía urinaria, permítame ser parte de su historia.»</p>
+      <p class="quote-by">Dr. Roberto Cisneros Chávez</p>
+      <dl class="creds">
+        <div><dt>Formación</dt><dd>Médico cirujano, Universidad La Salle</dd></div>
+        <div><dt>Especialidad</dt><dd>Urología, UAEMéx</dd></div>
+        <div><dt>Enfoque</dt><dd>Endourología y laparoscopia urológica</dd></div>
+        <div><dt>Atiende</dt><dd>Niños y adultos</dd></div>
+        <div class="full"><dt>Cédulas profesionales</dt><dd>5729716 y 8693016</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="visit">
+  <div class="wrap">
+    <div>
+      <h2>Así es tu primera <b>consulta</b></h2>
+      <ol class="steps">
+        <li><div><b>Escribes por WhatsApp</b><p>Te damos el primer espacio en el consultorio que te quede más cerca.</p></div></li>
+        <li><div><b>Consulta con el doctor</b><p>Te escucha, te revisa y te explica tu diagnóstico en palabras simples.</p></div></li>
+        <li><div><b>Sales con un plan</b><p>Tratamiento, estudios o cirugía, con costos claros desde el inicio.</p></div></li>
+      </ol>
+    </div>
+    <div class="prices">
+      <h3>Precios</h3>
+      <div class="price-row"><span>Primera consulta</span><b>desde $1,400 MXN</b></div>
+      <div class="price-row"><span>Consulta de seguimiento</span><b>$1,200 MXN</b></div>
+      <div class="price-row" style="border-bottom:0"><span>Uroflujometría con EMG</span><b>$600 MXN</b></div>
+      <p class="ins-title">Acepta tu seguro de gastos médicos</p>
+      <div class="ins-logos">
+        <img src="img/aseg/gnp.svg" alt="GNP Seguros" style="height:28px">
+        <img src="img/aseg/axa.svg" alt="AXA Seguros" style="height:30px">
+        <img src="img/aseg/mapfre.svg" alt="MAPFRE" style="height:40px">
+        <img src="img/aseg/metlife.svg" alt="MetLife México" style="height:24px">
+        <img src="img/aseg/zurich.svg" alt="Zurich" style="height:30px">
+      </div>
+      <p class="ins-note">Y 11 aseguradoras más. La cobertura cambia según el consultorio. Pagos con tarjeta, efectivo o transferencia.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="opiniones">
+  <div class="wrap">
+    <div>
+      <h2>Lo que dicen sus <b>pacientes</b></h2>
+      <div class="score">
+        <div class="num">5.0</div>
+        <div class="stars" aria-label="5 de 5 estrellas"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+        <p>415 opiniones verificadas. Lo que más mencionan: explicaciones detalladas, dedicación y puntualidad.</p>
+        <img class="dl" src="img/doctoralia-logo.svg" alt="Doctoralia">
+        <div><a class="btn btn-on-dark" href="https://www.doctoralia.com.mx/roberto-cisneros-chavez/urologo/cuauhtemoc2#profile-reviews" target="_blank" rel="noopener">Leer las opiniones<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a></div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <article class="rev"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span><p>«Excelente doctor, con gran conocimiento y trato. La atención y profesionalismo son impecables.»</p><footer><span><b>C.O.</b> · oct 2026</span><span class="verif"><i class="ph ph-seal-check"></i>Cita verificada</span></footer></article>
+      <article class="rev"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span><p>«Excelente trato y solucionó de forma inmediata el problema de salud que tenía.»</p><footer><span><b>David Vázquez</b> · oct 2026</span><span class="verif"><i class="ph ph-seal-check"></i>Cita verificada</span></footer></article>
+      <article class="rev"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span><p>«Todo muy bien, gracias. Mi hijo se sintió en confianza.»</p><footer><span><b>Andre Q.</b> · oct 2026</span><span class="verif"><i class="ph ph-seal-check"></i>Cita verificada</span></footer></article>
+      <article class="rev"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span><p>«Trato muy amable, explicación clara. Muy atento a toda mi explicación del porqué lo visitaba.»</p><footer><span><b>Ingrid Gómez</b> · oct 2026</span><span class="verif"><i class="ph ph-seal-check"></i>Cita verificada</span></footer></article>
+      <article class="rev"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span><p>«De los mejores doctores que me han atendido. Me atendió súper rápido.»</p><footer><span><b>Ewg</b> · sep 2026</span><span class="verif"><i class="ph ph-seal-check"></i>Cita verificada</span></footer></article>
+      <article class="rev"><span class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span><p>«El doctor fue muy amable, claro y con un seguimiento puntual.»</p><footer><span><b>EMG</b> · sep 2026</span><span class="verif"><i class="ph ph-seal-check"></i>Cita verificada</span></footer></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Un consultorio cómodo y <b>discreto</b></h2>
+    <div class="gallery">
+      <img class="g1" src="img/hospital-angeles.jpg" alt="Hospital Ángeles Metropolitano" style="object-position:50% 30%">
+      <img class="g2" src="img/sala-espera.jpg" alt="Sala de espera del consultorio">
+      <img class="g3" src="img/consultorio-exploracion.jpg" alt="Cuarto de exploración">
+      <img class="g4" src="img/consultorio-equipo.jpg" alt="Equipo del consultorio">
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="consultorios">
+  <div class="wrap">
+    <h2>Consulta en <b>3&nbsp;hospitales</b> de la CDMX</h2>
+    <div class="locs">
+      <div class="loc-list">
+        <div class="loc is-active">
+          <button class="loc-pick" type="button" data-map="https://www.google.com/maps?q=Dr.+Roberto+Cisneros+Ch%C3%A1vez+Urologo,+Tlacotalpan+59,+Roma+Sur&output=embed" aria-pressed="true"><b>Hospital Ángeles Metropolitano</b><span>Tlacotalpan 59, Roma Sur, Cuauhtémoc, 06760</span><small>Tarjeta, efectivo y seguros</small></button>
+          <a href="https://maps.google.com/?cid=6054721903003318393" target="_blank" rel="noopener">Cómo llegar<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="loc">
+          <button class="loc-pick" type="button" data-map="https://www.google.com/maps?q=Camino+a+Santa+Teresa+1055,+H%C3%A9roes+de+Padierna,+CDMX&output=embed" aria-pressed="false"><b>Pedregal Torre Médica</b><span>Camino a Santa Teresa 1055, piso 7, consultorio 794, Héroes de Padierna, 10700</span><small>Tarjeta, efectivo y transferencia</small></button>
+          <a href="https://www.google.com/maps/search/?api=1&query=Pedregal+Torre+Medica+Camino+a+Santa+Teresa+1055" target="_blank" rel="noopener">Cómo llegar<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="loc">
+          <button class="loc-pick" type="button" data-map="https://www.google.com/maps?q=Hospital+Polar+San+Jos%C3%A9,+Gabriel+Mancera+1802,+Del+Valle&output=embed" aria-pressed="false"><b>Hospital Polar San José</b><span>Gabriel Mancera 1802, Del Valle Centro, Benito Juárez, 03104</span><small>Agenda por WhatsApp o en línea</small></button>
+          <a href="https://www.google.com/maps/search/?api=1&query=Hospital+Polar+San+Jose+Gabriel+Mancera+1802" target="_blank" rel="noopener">Cómo llegar<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="map"><iframe id="mapa" title="Mapa del consultorio" src="https://www.google.com/maps?q=Dr.+Roberto+Cisneros+Ch%C3%A1vez+Urologo,+Tlacotalpan+59,+Roma+Sur&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Preguntas <b>frecuentes</b></h2>
+    <div class="faq-list">
+      <details><summary>¿Cuánto cuesta la consulta?<i class="ph ph-plus" aria-hidden="true"></i></summary><p>La primera consulta de urología es desde $1,400 MXN y la de seguimiento, $1,200 MXN. La uroflujometría con EMG cuesta $600 MXN.</p></details>
+      <details><summary>¿Aceptan mi seguro de gastos médicos?<i class="ph ph-plus" aria-hidden="true"></i></summary><p>Sí: GNP, AXA, MAPFRE, MetLife, Zurich y 11 aseguradoras más. La cobertura depende del consultorio y del servicio; mándanos tu póliza por WhatsApp y te confirmamos.</p></details>
+      <details><summary>¿Cómo puedo pagar?<i class="ph ph-plus" aria-hidden="true"></i></summary><p>Tarjeta de crédito o débito y efectivo. En Pedregal también por transferencia.</p></details>
+      <details><summary>¿Atiende a niños?<i class="ph ph-plus" aria-hidden="true"></i></summary><p>Sí, atiende a niños y adultos en algunos de sus consultorios. Pregúntanos cuál te conviene.</p></details>
+      <details><summary>¿Me pueden operar de piedras en el riñón sin cortes grandes?<i class="ph ph-plus" aria-hidden="true"></i></summary><p>En muchos casos sí, por endourología o laparoscopia. El doctor lo decide contigo en la consulta, con tus estudios.</p></details>
+      <details><summary>¿Cómo agendo?<i class="ph ph-plus" aria-hidden="true"></i></summary><p>Por WhatsApp o llamada al 55 2580 7262, o en línea en su perfil de Doctoralia a cualquier hora.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div>
+      <h2>No lo dejes para <b>después</b></h2>
+      <p>Entre más pronto se revisa, más sencillo es el tratamiento. Escribe y te damos el primer espacio disponible.</p>
+    </div>
+    <div class="cta">
+      <a class="btn btn-white" href="https://wa.me/525525807262?text=Hola%20doctor,%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i>Agendar por WhatsApp</a>
+      <a class="btn btn-on-dark" href="tel:+525525807262"><i class="ph ph-phone" aria-hidden="true"></i>Llamar</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot">
+      <div><img src="img/logo.png" alt="Dr. Roberto Cisneros Chávez"><p>Médico cirujano urólogo. Cédulas profesionales 5729716 y 8693016.</p></div>
+      <div><b>Agenda</b><a href="tel:+525525807262">55 2580 7262</a><br><a href="https://www.doctoralia.com.mx/roberto-cisneros-chavez/urologo/cuauhtemoc2" target="_blank" rel="noopener">Perfil en Doctoralia</a><br><a href="https://www.instagram.com/drrobertocisneros/" target="_blank" rel="noopener">Instagram @drrobertocisneros</a></div>
+      <div><b>Consultorios</b>Hospital Ángeles Metropolitano<br>Pedregal Torre Médica<br>Hospital Polar San José</div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Dr. Roberto Cisneros Chávez</span><span>Sitio de muestra hecho por Apogeo Digital</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-ghost" href="tel:+525525807262"><i class="ph ph-phone" aria-hidden="true"></i>Llamar</a>
+  <a class="btn btn-primary" href="https://wa.me/525525807262?text=Hola%20doctor,%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i>Agendar por WhatsApp</a>
+</div>
+
+<script>
+  // En el celular, la barra de abajo aparece cuando los botones de la portada ya no se ven.
+  new IntersectionObserver(([e]) => document.body.classList.toggle('show-bar', !e.isIntersecting))
+    .observe(document.querySelector('.hero .cta'));
+
+  // Cambia el mapa al consultorio que elijas.
+  const mapa = document.getElementById('mapa');
+  document.querySelectorAll('.loc-pick').forEach(btn => btn.addEventListener('click', () => {
+    document.querySelectorAll('.loc').forEach(l => l.classList.remove('is-active'));
+    document.querySelectorAll('.loc-pick').forEach(b => b.setAttribute('aria-pressed', 'false'));
+    btn.parentElement.classList.add('is-active');
+    btn.setAttribute('aria-pressed', 'true');
+    mapa.src = btn.dataset.map;
+  }));
+</script>
+</body>
+</html>
