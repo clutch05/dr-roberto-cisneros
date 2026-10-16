@@ -92,18 +92,15 @@
   .pf span{display:block;color:var(--muted);font-size:14px;margin-top:3px}
   .pf-rating{display:flex;align-items:center;gap:14px}
   .pf-rating img{height:22px;width:auto}
-  .pf-rating .stars{font-size:15px}
+  .pf-rating .stars{display:inline-flex;font-size:16px;margin:0 0 0 6px;color:var(--star)}
   .stars{color:var(--star);display:inline-flex;gap:1px;vertical-align:-2px}
 
-  /* Padecimientos */
-  .cond{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:56px}
-  .cond-head{position:sticky;top:104px;align-self:start}
-  .cond-group{border-top:1px solid var(--line);padding:22px 0 26px}
-  .cond-group h3{font-size:15px;font-weight:600;letter-spacing:-.005em;color:var(--teal);margin-bottom:16px}
-  .cond-items{display:grid;grid-template-columns:1fr 1fr;gap:20px 36px}
-  .cond-item b{display:block;font-size:17.5px;font-weight:600;letter-spacing:-.015em;margin-bottom:4px}
-  .cond-item b span{font-weight:600;color:var(--navy);margin-left:6px;font-size:15px}
-  .cond-item p{font-size:15px;color:var(--muted);line-height:1.55}
+  /* Padecimientos: tarjetas con foto, sin borde */
+  .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 22px;margin-top:30px}
+  .card img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);background:var(--tint)}
+  .card h3{font-size:18px;letter-spacing:-.02em;margin-top:14px}
+  .card p{font-size:15px;color:var(--muted);margin-top:4px;line-height:1.5}
+  .card p b{color:var(--navy);font-weight:600;white-space:nowrap}
 
   /* El doctor */
   .doc .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:60px;align-items:center}
@@ -215,9 +212,10 @@
     .proof .wrap{grid-template-columns:1fr 1fr;gap:20px 16px;padding-top:22px;padding-bottom:22px}
     .pf-rating{grid-column:1 / -1}
     .pf b{font-size:21px}
-    .cond,.doc .wrap,.visit .wrap,.reviews .wrap,.locs{grid-template-columns:1fr;gap:28px}
-    .cond-head{position:static}
-    .cond-items{grid-template-columns:1fr;gap:16px}
+    .doc .wrap,.visit .wrap,.reviews .wrap,.locs{grid-template-columns:1fr;gap:28px}
+    .cards{grid-template-columns:1fr 1fr;gap:22px 12px;margin-top:24px}
+    .card h3{font-size:16px;margin-top:10px}
+    .card p{font-size:13.5px}
     .doc-photo{aspect-ratio:4/3}
     .creds{grid-template-columns:1fr;gap:14px}
     .rev-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -20px;padding:0 20px 8px;scrollbar-width:none}
@@ -287,35 +285,16 @@
 </div>
 
 <section id="padecimientos">
-  <div class="wrap cond">
-    <div class="cond-head">
-      <h2>Lo que atiende, de la consulta a la <b>cirugía</b></h2>
-      <p class="sub">Cirugía de mínima invasión cuando se necesita: menos dolor y menos días en el hospital.</p>
-    </div>
-    <div>
-      <div class="cond-group">
-        <h3>Riñón y vías urinarias</h3>
-        <div class="cond-items">
-          <div class="cond-item"><b>Piedras en el riñón</b><p>Dolor fuerte en la espalda baja o sangre en la orina. Tratamiento por endourología, sin cortes grandes.</p></div>
-          <div class="cond-item"><b>Infecciones urinarias</b><p>Ardor o ganas de orinar a cada rato. Diagnóstico y tratamiento a tiempo.</p></div>
-          <div class="cond-item"><b>Uroflujometría con EMG <span>$600 MXN</span></b><p>Estudio en consultorio que mide cómo orinas para elegir el tratamiento correcto.</p></div>
-        </div>
-      </div>
-      <div class="cond-group">
-        <h3>Próstata</h3>
-        <div class="cond-items">
-          <div class="cond-item"><b>Crecimiento de próstata</b><p>Te levantas de noche a orinar o el chorro es débil. Prostatectomía transuretral cuando hace falta.</p></div>
-          <div class="cond-item"><b>Cáncer de próstata</b><p>Revisión, diagnóstico y prostatectomía radical laparoscópica.</p></div>
-        </div>
-      </div>
-      <div class="cond-group">
-        <h3>Salud masculina y cirugía</h3>
-        <div class="cond-items">
-          <div class="cond-item"><b>Vasectomía</b><p>Procedimiento rápido, explicado con calma y sin pena.</p></div>
-          <div class="cond-item"><b>Molestias en los testículos</b><p>Inflamación, ardor o una bolita. Balanitis y espermatocele.</p></div>
-          <div class="cond-item"><b>Cáncer de riñón, vejiga y testículo</b><p>Nefrectomía y cirugía oncológica por laparoscopia.</p></div>
-        </div>
-      </div>
+  <div class="wrap">
+    <h2>Lo que atiende, de la consulta a la <b>cirugía</b></h2>
+    <p class="sub">Cirugía de mínima invasión cuando se necesita: menos dolor y menos días en el hospital.</p>
+    <div class="cards">
+      <article class="card"><img src="img/padecimientos/piedras.jpg" alt="Equipo de ultrasonido"><h3>Piedras en el riñón</h3><p>Tratamiento por endourología, sin cortes grandes.</p></article>
+      <article class="card"><img src="img/padecimientos/prostata.jpg" alt="Paciente en consulta"><h3>Crecimiento de próstata</h3><p>Si te levantas de noche a orinar o el chorro es débil.</p></article>
+      <article class="card"><img src="img/padecimientos/cancer.jpg" alt="Revisión de estudios en tableta"><h3>Cáncer urológico</h3><p>Próstata, riñón, vejiga y testículo, por laparoscopia.</p></article>
+      <article class="card"><img src="img/padecimientos/vasectomia.jpg" alt="Pareja sonriendo"><h3>Vasectomía</h3><p>Rápida y explicada con calma, sin pena.</p></article>
+      <article class="card"><img src="img/padecimientos/infecciones.jpg" alt="Paciente platicando con su médico"><h3>Infecciones y molestias</h3><p>Ardor, inflamación o una bolita en el testículo.</p></article>
+      <article class="card"><img src="img/padecimientos/uroflujometria.jpg" alt="Estudio en consultorio"><h3>Uroflujometría con EMG</h3><p>Estudio en consultorio que mide cómo orinas. <b>$600 MXN</b></p></article>
     </div>
   </div>
 </section>
